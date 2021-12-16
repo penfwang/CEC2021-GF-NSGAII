@@ -21,8 +21,8 @@ if __name__ == "__main__":
     tt = ['dataSet_wine']
     seed=[16]
     dataset_name = tt[0]
-    folder1 = '/vol/grid-solar/sgeusers/wangpeng/multi-result/split_73' + '/' + 'train' + str(dataset_name) + ".npy"
-    folder2 = '/vol/grid-solar/sgeusers/wangpeng/multi-result/split_73' + '/' + 'test' + str(dataset_name) + ".npy"
+    folder1 ='train' + str(dataset_name) + ".npy"
+    folder2 = 'test' + str(dataset_name) + ".npy"
     x_train = np.load(folder1)
     x_test = np.load(folder2)
     running_30 = []
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     refrence_point = np.ones((1, 2))
     for i in range(len(seed)):
        start = time.time()
-       random.seed(seed[i])
+       random.seed(seed[i])'/vol/grid-solar/sgeusers/wangpeng/multi-result/split_73' + '/' + 
        pop,unique_number = main_loop(seed[i],x_train)
        end = time.time()
        running_time = end - start
