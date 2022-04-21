@@ -1,4 +1,7 @@
 # CEC2021-grid
+
+A Grid-dominance based Multi-objective Algorithm for Feature Selection in Classification
+
 code and paper for 2021 IEEE CEC
 If you are interested in our research, please cite our paper
 @inproceedings{wang2021grid,
