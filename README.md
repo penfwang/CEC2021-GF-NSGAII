@@ -1,4 +1,4 @@
-# CEC2021-grid
+#GF-NSGAII
 
 A Grid-dominance based Multi-objective Algorithm for Feature Selection in Classification
 
